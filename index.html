@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
+<!-- 
+    preload -
+    jquery validation -
+ -->
 
 <body>
     <header>
@@ -40,9 +44,9 @@
             </div>
         </div>
         <div class="video-container">
-            <video src="assets/img/video1.mp4" autoplay loop class="vid vid1"></video>
-            <video src="assets/img/video2.mp4" autoplay loop class="vid vid2"></video>
-            <video src="assets/img/video3.mp4" autoplay loop class="vid vid3"></video>
+            <video src="assets/img/video2.mp4" autoplay muted loop class="vid vid2"></video>
+            <video src="assets/img/video3.mp4" autoplay muted loop class="vid vid3"></video>
+            <video src="assets/img/video1.mp4" autoplay muted loop class="vid vid1"></video>
 
         </div>
         <div class="controls">
@@ -228,45 +232,17 @@
         <h1>&copy; copyright @2021 by <span>misbah asim</span></h1>
     </footer>
     <!-- footer section ends -->
+    <!-- back to top button -->
+
+    <a href="#home" id="scrollTop"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- loader -->
+    <div class="loader-container">
+        <img src="assets/img/ajax-loader.gif" alt="">
+    </div>
 
     <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#sideIcon').click(function () {
-                $(this).toggleClass("fa-bars fa-times");
-                $("nav").toggleClass("nav-toggle");
-            });
-
-            $("nav ul li a").click(function () {
-                $("#sideIcon").removeClass("fa-times").addClass("fa-bars");
-                $("nav").removeClass("nav-toggle");
-            });
-
-            $(window).on("scroll load", function () {
-                if ($(window).scrollTop() > 20) {
-                    $("header").addClass("header-active");
-                } else {
-                    $("header").removeClass("header-active");
-                }
-            });
-
-            $(".dot1").click(function () {
-                $(".vid1").css("display", "block");
-                $(".vid2").css("display", "none");
-                $(".vid3").css("display", "none");
-            });
-            $(".dot2").click(function () {
-                $(".vid2").css("display", "block");
-                $(".vid1").css("display", "none");
-                $(".vid3").css("display", "none");
-            });
-            $(".dot3").click(function () {
-                $(".vid3").css("display", "block");
-                $(".vid1").css("display", "none");
-                $(".vid2").css("display", "none");
-            });
-        });
-    </script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
