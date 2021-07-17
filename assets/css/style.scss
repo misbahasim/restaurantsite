@@ -471,6 +471,33 @@ footer{
     }
 }
 
+#scrollTop{
+    position: fixed;
+    top: -120%;
+    right: 2rem;
+    padding: 0 1rem;
+    font-size: 3rem;
+    background: $yellow;
+    color: #333;
+    border-radius: .5rem;
+    transition: .8s linear;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.loader-container{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 1000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
 .fa-times{
     transform: rotate(-180deg); //skew(-180deg)
 }
