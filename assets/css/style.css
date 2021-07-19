@@ -598,6 +598,11 @@ header nav ul li a:hover {
   background: #FFF200;
 }
 
+#contact form .error_form {
+  color: #ff3300;
+  font-size: 1.5rem;
+}
+
 footer {
   background-color: #333;
 }
