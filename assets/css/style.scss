@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
-$yellow:#FFF200;
+$yellow:#C5A86A;
 
+*::selection{
+    background: $yellow;
+    color: #FFF;
+}
 @mixin button{
     outline: none;
     border: none;
@@ -48,6 +52,7 @@ $yellow:#FFF200;
     text-transform: capitalize;
     transition: all .2s linear;
     font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
 }
 
 html{
@@ -77,6 +82,10 @@ header{
     }
 
     .logo{
+        font-family: 'Lemonada', cursive;
+        color: $yellow;
+        font-size: 3rem;
+        text-decoration: none;
         img{
             height: 5rem;
         }
@@ -171,6 +180,7 @@ header{
         .dots{
             height: 2rem;
             width: 2rem;
+            border-radius: 50%;
             cursor: pointer;
             background: $yellow;
             margin: 0 1rem;
@@ -243,6 +253,10 @@ header{
         h1{
             @include heading();
         }
+        p{
+            color: #333;
+            font-size: 2rem;
+        }
     }
     .content{
         margin: 5rem auto;
@@ -273,6 +287,10 @@ header{
     .heading{
         h1{
             @include heading();
+        }
+        p{
+            color: #333;
+            font-size: 2rem;
         }
     }
     .box-container{
@@ -336,12 +354,13 @@ header{
 #contact{
     min-height: 100vh;
     width: 100vw;
-    background:url('../img/contact.jpg') ;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('../img/contact.jpg') ;
     background-size: cover;
     background-position: center;
     .heading{
         h1{
             @include heading();
+            color: #fff;
         }
     }
     form{
@@ -505,7 +524,7 @@ footer{
 .fa-times{
     transform: rotate(-180deg); //skew(-180deg)
 }
-// media queries
+//  If screen size is 768px wide, or less
 @media (max-width:768px) {
     html{
         font-size: 50%;
