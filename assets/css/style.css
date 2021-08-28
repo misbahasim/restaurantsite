@@ -67,6 +67,10 @@ header .logo img {
   height: 5rem;
 }
 
+header .logo:hover {
+  color: #FFF;
+}
+
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -637,6 +641,10 @@ footer {
   background-color: #333;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 footer .brand {
   text-align: center;
   margin-top: 2rem;
@@ -676,6 +684,10 @@ footer .footer-links h3 {
 footer .footer-links a {
   color: #fff;
   font-size: 1.7rem;
+}
+
+footer .footer-links a:hover {
+  color: #C5A86A;
 }
 
 footer .letter h2 {
@@ -743,8 +755,12 @@ footer h1, footer #home .content h2, #home .content footer h2 {
   color: #fff;
 }
 
-footer h1 span, footer #home .content h2 span, #home .content footer h2 span {
+footer h1 a, footer #home .content h2 a, #home .content footer h2 a {
   color: #C5A86A;
+}
+
+footer h1 a:hover, footer #home .content h2 a:hover, #home .content footer h2 a:hover {
+  color: #FFF;
 }
 
 #scrollTop {

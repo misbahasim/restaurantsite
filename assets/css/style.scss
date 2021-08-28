@@ -89,6 +89,9 @@ header{
         img{
             height: 5rem;
         }
+        &:hover{
+            color: #FFF;
+        }
     }
 
     nav{
@@ -423,6 +426,9 @@ header{
 
 footer{
     background-color: #333;
+    a{
+        text-decoration: none;
+    }
     .brand{
         text-align: center;
         margin-top: 2rem;
@@ -453,6 +459,9 @@ footer{
         a{
             color: #fff;
             font-size: 1.7rem;
+            &:hover{
+                color: $yellow;
+            }
         }
     }
     .letter{
@@ -488,8 +497,11 @@ footer{
         padding: 2rem 0;
         text-align: center;
         color: #fff;
-        span{
+        a{
             color: $yellow;
+            &:hover{
+                color: #FFF;
+            }
         }
     }
 }
