@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    $(window).on("load", function () {
-        $(".loader-container").fadeOut("fast");
-    });
+    setTimeout(function(){
+        $(".loader-container").fadeOut();
+    }, 90);
 
     $('#sideIcon').click(function () {
         $(this).toggleClass("fa-bars fa-times");
